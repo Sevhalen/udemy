@@ -1,0 +1,46 @@
+/* Exemple de commentaire en CSS */
+
+p
+{
+    /* exemple de mise en couleur RGB :
+    color: rgb(0,50,255);
+    Pour de la transparence, peut également être utilisé le rgba,
+    où a va de 0 à 1
+    */
+    color: #0080ff;
+    font-size: 20px;
+    /* dans la définition de la police ci-dessous, l'enchainement
+    est le suivant : la police principale est Helvetica, si l'utilisateur
+    ne possède pas celle-ci, alors sera utilisée Arial, et si l'utilisateur
+    ne possède aucune des 2 premières, alors la police serif sera utilisée */
+    font-family: Helvetica, Arial, serif;
+}
+
+h1
+{
+    color: darkmagenta;
+    font-size: 30px;
+}
+
+/* Style à appliquer à un paragraphe présent dans 1 div, elle-même dans 1 div */
+div div p
+{
+    color: red;
+}
+
+/* Sélecteur de tous les éléments */
+*
+{
+    border: 2px solid grey;
+}
+
+div *
+{
+    background-color: chartreuse;
+}
+
+/* Sélection d'une classe au moyen d'un point précédent le nom de la classe */
+.special_paragraph
+{
+    font-family: monospace;
+}
